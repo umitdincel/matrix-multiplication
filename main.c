@@ -30,7 +30,7 @@ int main(int argc, char* argv[]){
     gettimeofday(&t1, 0);
 
     elapsed = getElapsedTime(t1, t0);
-    mFlops = getMFlops(400000000, elapsed);
+    mFlops = getMFlops(440000000, elapsed);
     flopPercentage = (float)mFlops / MAX_MFLOPS * 100.0;
 
     printf("Total duration: %f\n", elapsed);
@@ -44,7 +44,7 @@ int main(int argc, char* argv[]){
     gettimeofday(&t1, 0);
 
     elapsed = getElapsedTime(t1, t0);
-    mFlops = getMFlops(400000000, elapsed);
+    mFlops = getMFlops(440000000, elapsed);
     flopPercentage = (float)mFlops / MAX_MFLOPS * 100.0;
 
     printf("Total duration: %f\n", elapsed);
