@@ -12,9 +12,8 @@ double parallelMultiplyFloat(floatTYPE** matrixA, floatTYPE** matrixB, floatTYPE
     }
 
     gettimeofday(&t1, 0);
-    double elapsed = (t1.tv_sec-t0.tv_sec) * 1.0f + (t1.tv_usec - t0.tv_usec) / 1000000.0f;
 
-    return elapsed;
+    return getElapsedTime(t1, t0);
 }
 
 
@@ -32,9 +31,8 @@ double parallelMultiplyDouble(doubleTYPE** matrixA, doubleTYPE** matrixB, double
     }
 
     gettimeofday(&t1, 0);
-    double elapsed = (t1.tv_sec-t0.tv_sec) * 1.0f + (t1.tv_usec - t0.tv_usec) / 1000000.0f;
 
-    return elapsed;
+    return getElapsedTime(t1, t0);
 }
 
 
